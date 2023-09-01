@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    users = [
+        {name: "1984", author: "George Orwell", ISBN: 123123, price: 10},
+        {name: "Animal farm", author: "George Orwell", ISBN: 124124, price: 10},
+        {name: "A Clergyman's Daughter", author: "George Orwell", ISBN: 125125, price: 10},
+        {name: "Shantaram", author: "Gregory Roberts", ISBN: 223223, price: 20},
+        {name: "The Mountain Shadow", author: "Gregory Roberts", ISBN: 224224, price: 20},
+        {name: "The picture of dorian gray", author: "Oscar Wilde", ISBN: 323323, price: 30},
+        {name: "Salomé", author: "Oscar Wilde", ISBN: 324324, price: 30},
+        {name: "The Adventures of Sherlock Holmes", author: "Arthur Conan Doyle", ISBN: 423423, price: 40},
+        {name: "The sign of the four", author: "Arthur Conan Doyle", ISBN: 424424, price: 40},
+        {name: "To Kill a Mockingbird", author: "Harper Lee", ISBN: 123123, price: 50},
+        {name: "Go set the watchman", author: "Harper Lee", ISBN: 123123, price: 50}
+    ];
+    let a = prompt("please insert author: ")
+    let userCanEnter = false;
+    let d=""
+    for (let c of users){
+        if(c.author == a ){
+            userCanEnter = true;
+            d+= c.name+" - "+c.author+" - "+c.ISBN+" - "+c.price+"$"+" "+"\n"
+        }
+    }
+    alert(d)
+    if(!userCanEnter){
+        alert('we can not found the author!');
+    }
+</script>
+</body>
+</html>

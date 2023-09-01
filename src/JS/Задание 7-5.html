@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    cars = [
+
+        {"name": "Toyota", "price": 12000000, "year": 2015, "volume": 2.2},
+
+        {"name": "Mercedes", "price": 70000000, "year": 2018, "volume": 3.8},
+        {"name": "Mercedes", "price": 6500000, "year": 2016, "volume": 4.0},
+
+        {"name": "Toyota", "price": 7000000, "year": 2013, "volume": 2.0},
+
+        {"name": "BMW", "price": 11000000, "year": 2011, "volume": 3.0},
+
+        {"name": "Lexus", "price": 60000000, "year": 2017, "volume": 5.7}
+
+    ];
+
+
+    while (true) {
+
+        alert('INSERT [1] TO SEARCH BY NAME\n' +
+            '\n' +
+            'INSERT [2] TO SEARCH BY YEAR\n' +
+            '\n' +
+            'INSERT [3] TO SEARCH BY ENGINE VOLUME\n' +
+            '\n' +
+            'INSERT [4] TO SEARCH BY PRICE\n' +
+            '\n' +
+            'INSERT [5] TO EXIT')
+
+        let choice = prompt() * 1
+
+        if (choice == 1) {
+            let carsMassiveByName = ""
+
+            let carName = prompt()
+
+            for (let i = 0; i < cars.length; i++) {
+                if (cars[i].name == carName) {
+                    carsMassiveByName += cars[i].name + " - " + cars[i].price + "\n"
+                }
+            }
+
+            alert(carsMassiveByName)
+        }
+    }
+</script>
+</body>
+</html>

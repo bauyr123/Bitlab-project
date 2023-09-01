@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt('Введите длину массива')
+    let mas = []
+    for (let i = 0; i < n; i++) {
+        mas[i] = prompt("Введите число: ")
+    }
+    let a = ""
+let max = ''
+    for (let i = 0; i < n; i++) {
+        a += mas[i] + " "
+if(mas[i] > max)
+    max = mas[i]
+    }
+   console.log(max)
+</script>
+</body>
+</html>

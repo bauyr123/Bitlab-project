@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let number = prompt()*1
+    let mas = []
+
+    for (let i = 0; i < number; i++) {
+        mas[i] = prompt()*1
+    }
+
+    let count = 0
+    let sum = 0
+    for (let i = 0; i < mas.length; i++) {
+        sum += mas[i]
+        count++
+    }
+    alert(sum + " " + (sum/count))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mas = []
+    let number = prompt()*1
+
+ while (number !==0){
+     mas.push(number)
+     number = prompt()*1
+ }
+ let umn = 1
+    for (let i = 0; i < mas.length; i++) {
+        umn*=mas[i]
+    }
+alert((Math.pow(umn, 1/mas.length)).toFixed(3))
+
+</script>
+</body>
+</html>
